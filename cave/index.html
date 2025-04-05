@@ -230,6 +230,9 @@
                 </p>
               </div>
             </div>
+            <!-- <div class="image-container">
+              <img src="./static/images/overview_CAVE.png" alt="overview">
+            </div> -->
             <div class="method-block">
               <div class="method-block-text">
                 <h3>LRP with Conservation for <span style="color: #006c66;">CAVE </span></h3>
@@ -272,12 +275,14 @@
     <div class="hero-body">
       <div class="container">
         <h4 class="title is-4 has-text-centered" style="color: #006c66;">3D Consistency of Concepts</h4>
-        <p>We evaluate the consistency of concepts with our novel metric <span style="color: #006c66;">3D
-            Consistency</span>, where a concept is mapped to an object part in 3D ground-truth CAD
-          models. Here we show 6 concepts of class Bicycle corresponding to those in Fig. 1, where each illustrates
-          the
-          aggregated concept relevance across 100 test images onto the mesh surface.</p>
-        <div class="image-container">
+        <div class="method-block-text">
+          <p>We evaluate the consistency of concepts with our novel metric <span style="color: #006c66;">3D
+              Consistency</span>, where a concept is mapped to an object part in 3D ground-truth CAD
+            models. Here we show 6 concepts of class Bicycle corresponding to those in Fig. 1, where each illustrates
+            the
+            aggregated concept relevance across 100 test images onto the mesh surface.</p>
+        </div>
+        <div class="column is-max-desktop">
           <img class="image-wrapper sudoku" src="./static/images/CADs.png" alt="CAD">
         </div>
       </div>
@@ -288,23 +293,25 @@
     <div class="hero-body">
       <div class="container">
         <h4 class="title is-4 has-text-centered" style="color: #006c66;">Robustness & Interpretability of Concepts</h4>
-        <p>We evaluate the robustness of concepts by measuring model <b>Accuracy</b> across diverse OOD settings.
-          <span style="color: #006c66;">CAVE</span> performs best in both in-distribution and OOD scenarios,
-          experiencing
-          only a slight deterioration in performance compared to other baseline methods. For
-          interpretability, our metrics are designed to quantify key properties that address the question: <i>to what
-            extent are our explanations aligned with human-annotated object parts?</i> This includes: <b>IoU</b>,
-          <b>Local
-            Coverage</b>, <b>Global Coverage</b> and <b>Pureness</b>. Here, we show a qualitative example of a car
-          with 40%
-          occlusion, where existing methods fail to provide reliable explanations due to their sensitivity to missing
-          object parts. <span style="color: #006c66;">CAVE</span> focuses on more informative regions despite the
-          occlusion, demonstrating better
-          resilience to missing object parts. This highlights the importance of robust explanations when dealing with
-          OOD challenges.
-        </p>
+        <div class="method-block-text">
+          <p>We evaluate the robustness of concepts by measuring model <b>Accuracy</b> across diverse OOD settings.
+            <span style="color: #006c66;">CAVE</span> performs best in both in-distribution and OOD scenarios,
+            experiencing
+            only a slight deterioration in performance compared to other baseline methods. For
+            interpretability, our metrics are designed to quantify key properties that address the question: <i>to what
+              extent are our explanations aligned with human-annotated object parts?</i> This includes: <b>IoU</b>,
+            <b>Local
+              Coverage</b>, <b>Global Coverage</b> and <b>Pureness</b>. Here, we show a qualitative example of a car
+            with 40%
+            occlusion, where existing methods fail to provide reliable explanations due to their sensitivity to missing
+            object parts. <span style="color: #006c66;">CAVE</span> focuses on more informative regions despite the
+            occlusion, demonstrating better
+            resilience to missing object parts. This highlights the importance of robust explanations when dealing with
+            OOD challenges.
+          </p>
+        </div>
         &nbsp
-        <div class="image-container">
+        <div class="column is-max-desktop">
           <img class="image-wrapper sudoku" src="./static/images/FGL2.png" alt="occ">
         </div>
       </div>
@@ -324,7 +331,7 @@
               </div>
             </div>
           </div>
-          <div class="item item-doge">
+          <div class="item item-sandra">
             <div class="plot_wrapper">
               <div class="content results-image row">
                 <img src="./static/images/qual_2.png" alt="qual_2" , class="image-wrapper sudoku">
