@@ -8,42 +8,13 @@ body {
   color: #000;
 }
 
-.image-container {
-  display: flex;
-  justify-content: center;
-  /* Centers the images */
-  align-items: center;
-  /* Aligns them vertically */
-  gap: 20px;
-  /* Adjust spacing between images */
-}
-
-.small-teaser-image {
-  width: 32%;
-  height: 32%;
-}
-
-.large-teaser-image {
-  width: 55%;
-  /* Adjust size as needed */
-  height: 55%;
-  /* Maintain aspect ratio */
-}
-
-.huge-teaser-image {
-  width: 90%;
-  /* Adjust size as needed */
-  height: auto;
-  /* Maintain aspect ratio */
-}
-
 .link-block a {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .teaser .hero-body {
-  padding-top: 3rem;
+  padding-top: 0;
   padding-bottom: 3rem;
 }
 
@@ -211,7 +182,7 @@ body {
 
 .image-wrapper {
   width: 90%;
-  margin: 25px 5% !important;
+  margin: 0px 5% !important;
 }
 
 .item {
