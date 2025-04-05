@@ -201,7 +201,7 @@
                 <div class="columns is-centered">
                   <img src="./static/images/overview_CAVE.png" alt="Image 1" , style="max-width: 100%;">
                 </div>
-                <p>We introduce <span style="color: #006c66;">CAVE </span>, a framework that allows for robust
+                <!-- <p>We introduce <span style="color: #006c66;">CAVE </span>, a framework that allows for robust
                   conceptual reasoning and classification through interpretable
                   3D-aware neural object volumes (NOVs). <b>(1)</b> Given the NOV of class Car, <span
                     style="color: #006c66;">CAVE </span> first extracts
@@ -228,6 +228,31 @@
                   is computed as
                   the sum of cosine similarities over F<sub>x</sub>, considering only features mapped to its cluster
                   <b>(5)</b>.
+                </p> -->
+                <p>We introduce <span style="color: #006c66;">CAVE </span>, a framework that allows for robust
+                  conceptual reasoning and classification through interpretable
+                  3D-aware neural object volumes (NOVs). <b>(1)</b> Given the NOV of class Car, <span
+                    style="color: #006c66;">CAVE
+                  </span> first extracts
+                  concepts via
+                  clustering on Gaussian features g<sub>Car</sub><sup>(k)</sup> and represent the mean feature of each
+                  Gaussian
+                  cluster as a
+                  concept h<sub>Car</sub><sup>(t)</sup>. Note that the clusters here are visually refined for
+                  illustrative
+                  purposes to better
+                  convey our method. For classification, <span style="color: #006c66;">CAVE </span> combines image
+                  features F<sub>x</sub> in <b>(2)</b> and
+                  interpretable
+                  concept-aware NOVs H in <b>(3)</b> through a bag-of-word concept matching step
+                  <b>(4)</b>,
+                  where each
+                  feature f<sub>i</sub> &isin; F<sub>x</sub> is best aligned with H by cosine similarity. The logit
+                  for class
+                  y
+                  is computed as
+                  the sum of cosine similarities over F<sub>x</sub>, considering only features mapped to its cluster
+                  <b>(5)</b>.
                 </p>
               </div>
             </div>
@@ -235,7 +260,7 @@
             <div class="method-block">
               <div class="method-block-text">
                 <h3>LRP with Conservation for <span style="color: #006c66;">CAVE </span></h3>
-                <p>LRP is, however, only defined for standard architectures and does not yield meaningful
+                <!-- <p>LRP is, however, only defined for standard architectures and does not yield meaningful
                   attributions for NOV-based
                   classifications, attributing only to a few pixels rather than correctly to whole object features. We
                   introduce LRP for <span style="color: #006c66;">CAVE </span>-like architectures. <b>Top:</b> At an
@@ -248,6 +273,21 @@
                   by mapping relevance R<sub><span
                       style="font-family: 'Lucida Calligraphy', 'Monotype Corsiva', 'URW Chancery L', 'Apple Chancery', 'Tex Gyre Chorus', cursive, serif;">M</span></sub>
                   from the matching layer to the corresponding
+                  feature f<sub>i</sub> &isin; F<sub>x</sub>, then distributing channel-wise with NOV-weighted feature
+                  importance.</p>
+              </div> -->
+
+                <p>LRP is, however, only defined for standard architectures and does not yield meaningful
+                  attributions for NOV-based
+                  classifications, attributing only to a few pixels rather than correctly to whole object features. We
+                  introduce LRP for <span style="color: #006c66;">CAVE </span>-like architectures. <b>Top:</b> At an
+                  upsampling layer U, feature maps A<sub>v</sub> and A<sub>v+l</sub> from non-consecutive layers are
+                  concatenated
+                  after padding for dimensional consistency. The relevance score R is split into R<sub>v</sub> and
+                  R<sub>v+l</sub>, where
+                  R<sub>v+l</sub> is masked to exclude padding contributions. <b>Bottom:</b> We ensure spatial
+                  consistency
+                  by mapping relevance R<sub>M</sub> from the matching layer M to the corresponding
                   feature f<sub>i</sub> &isin; F<sub>x</sub>, then distributing channel-wise with NOV-weighted feature
                   importance.</p>
               </div>
@@ -286,7 +326,7 @@
     </div>
   </section>
 
-  <!-- <section class="hero is-small">
+  <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <h4 class="title is-4 has-text-centered" style="color: #006c66;">Robustness & Interpretability of Concepts</h4>
@@ -311,9 +351,9 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="hero is-small">
+  <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <h4 class="title is-4 has-text-centered" style="color: #006c66;">CAVE's Concept Visualisation</h4>
@@ -336,7 +376,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <section class="section">
     <div class="container is-max-desktop content">
